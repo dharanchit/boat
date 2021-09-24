@@ -31,11 +31,11 @@ const SideBar = () => {
 const SIDEBAR_PROPS = [
   {
     name: "Finance",
-    route: "/finance",
+    route: "boat/finance",
   },
   {
     name: "Software Development",
-    route: "/software-development",
+    route: "boat/software-development",
   },
 ]
 
