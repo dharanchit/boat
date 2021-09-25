@@ -37,9 +37,11 @@ const FooterWrapper = styled.div`
   left: 0;
   bottom: 0;
   text-align: end;
+  padding-right: 20px;
 `
 
 const Layout = ({ children }) => {
+  const [selectedItem, setSelectedItem] = React.useState("")
   return (
     <>
       <MainWrapper>
@@ -52,10 +54,7 @@ const Layout = ({ children }) => {
         </BodyWrapper>
       </MainWrapper>
       <FooterWrapper>
-        Author:{" "}
-        <OutboundLink href="https://twitter.com/anchitdhar">
-          Anchit Dhar
-        </OutboundLink>
+        <p>Last updated on: {new Date().toDateString()}</p>
       </FooterWrapper>
     </>
   )
