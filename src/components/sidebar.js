@@ -16,13 +16,15 @@ const SideBarWrapper = styled.div`
 const SideBar = () => {
   return (
     <SideBarWrapper>
-      <Link to="/">
+      <Link to="/boat">
         <div className="blog-link">Blog</div>
       </Link>
       {SIDEBAR_PROPS.map(item => (
-        <Link to={item.route}>
-          <div>{item.name}</div>
-        </Link>
+        <div key={item.key}>
+          <Link to={item.route}>
+            <div>{item.name}</div>
+          </Link>
+        </div>
       ))}
     </SideBarWrapper>
   )
@@ -30,12 +32,14 @@ const SideBar = () => {
 
 const SIDEBAR_PROPS = [
   {
+    key: 1,
     name: "Finance",
-    route: "boat/finance",
+    route: "/boat/finance",
   },
   {
+    key: 2,
     name: "Software Development",
-    route: "boat/software-development",
+    route: "/boat/software-development",
   },
 ]
 
