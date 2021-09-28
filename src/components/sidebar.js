@@ -60,6 +60,12 @@ const SIDEBAR_PROPS = [
     route: "/boat/software-development",
     // route: "/software-development",
   },
+  {
+    key: 3,
+    name: "Stock Tips",
+    route: "/boat/stock-tips",
+    // route: "/software-development",
+  },
 ]
 
 export default SideBar
