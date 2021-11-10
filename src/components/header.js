@@ -49,22 +49,22 @@ const Header = () => {
     <HeaderWrapper>
       <Grid container xs={4} md={12} className="header-mobile-desktop-visibility">
         <div>
-          <Link className="link-decoration" to="/">
+          <Link className="link-decoration" to="/boat">
             <span className="logo-class">AD NewsLetter</span>
           </Link>
         </div>
         <div className="sub-section-div">
-          <Link className="link-decoration" to="/finance">
+          <Link className="link-decoration" to="/boat/finance">
             <span className="sub-section">Finance</span>
           </Link>
         </div>
         <div className="sub-section-div">
-          <Link className="link-decoration" to="/stock-tips">
+          <Link className="link-decoration" to="/boat/stock-tips">
             <span className="sub-section">Stock Tips</span>
           </Link>
         </div>
         <div className="sub-section-div">
-          <Link className="link-decoration" to="/software-development">
+          <Link className="link-decoration" to="/boat/software-development">
             <span className="sub-section">Development</span>
           </Link>
         </div>
