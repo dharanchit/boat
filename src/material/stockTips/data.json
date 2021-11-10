@@ -3,13 +3,14 @@
     "Share Name": "INDIGO",
     "Current Price": "2,024.00",
     "Target Price": "2250-2300",
-    "Dated": "28 Sept"
+    "Dated": "28 Sept",
+    "Remarks": ""
   },
   {
-    "Share Name": "Bajaj Fianance",
-    "Current Price": "7,860.00",
-    "Target Price": "8000",
-    "Dated": "17 Oct",
-    "Remarks": "Breakout at 8000"
+    "Share Name": "HDFC AMC",
+    "Current Price": "2,690.00",
+    "Target Price": "3000+",
+    "Dated": "10 Nov",
+    "Remarks": "Breakout at 2710"
   }
 ]

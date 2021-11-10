@@ -10,23 +10,21 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 import Header from "./header"
 import "./layout.css"
-import SideBar from "./sidebar"
-import { OutboundLink } from "gatsby-plugin-google-gtag"
+import MobileHeader from "./MobileHeader"
 
 const MainWrapper = styled.div`
   display: flex;
   width: 100%;
   min-height: 100%;
-`
 
-const SideWrapper = styled.div`
-  width: 15%;
-  display: flex;
-  flex-direction: row;
+  .blog-body{
+    padding: 20px 100px;
+    overflow-y: auto;
+  }
 `
 
 const BodyWrapper = styled.div`
-  width: 85%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 `
@@ -41,16 +39,13 @@ const FooterWrapper = styled.div`
 `
 
 const Layout = ({ children }) => {
-  const [selectedItem, setSelectedItem] = React.useState("")
   return (
     <>
       <MainWrapper>
-        <SideWrapper>
-          <SideBar />
-        </SideWrapper>
         <BodyWrapper>
           <Header />
-          <main>{children}</main>
+          <MobileHeader />
+          <main className="blog-body">{children}</main>
         </BodyWrapper>
       </MainWrapper>
       <FooterWrapper>
