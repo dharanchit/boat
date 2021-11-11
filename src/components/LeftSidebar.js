@@ -59,9 +59,9 @@ const StyledWrapper = styled.div`
 const SidebarLeft = [
   {
     topLinks: [
-      { navLink: "Finance", href:"/boat/finance", color: "black", isAnchor:true},
-      { navLink: "Stock Tips", href:"/boat/stock-tips", color: "black", isAnchor:true },
-      { navLink: "Development", href:"/boat/software-development",color: "black", isAnchor:true }
+      { navLink: "Finance", href:"/finance", color: "black", isAnchor:true},
+      { navLink: "Stock Tips", href:"/stock-tips", color: "black", isAnchor:true },
+      { navLink: "Development", href:"/software-development",color: "black", isAnchor:true }
     ],
   },
 ];
