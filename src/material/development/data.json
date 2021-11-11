@@ -1,0 +1,6 @@
+[
+    {
+        "title": "Round Robin",
+        "description": "It schedules the process with a time sharing technique meaning each process is given a specific time to finish, if its status isn't completed by that time the next task is pushed in the priority queue and the existing task is put on halt. Eg, if the two tasks are in queue one of them takes 250ms to finish and the other one 50ms and time slot is defined to be 100ms. When 1st task is pushed into queue and after 100ms since it wont be finished, the next task P2 will be pushed and worker will start working on it. Once 100ms has passed for the first task, next task will get their equal share of the cpu time and the cycle will repeat. The process will continue until the job finishes."
+    }
+]
