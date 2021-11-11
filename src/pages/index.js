@@ -27,7 +27,7 @@ const IndexPage = () => {
       <Layout>
         <Seo title="Home" />
         <Grid container justifyContent="center">
-          <h3>Goal is to post at thrice a week</h3>
+          <h3>Goal is to post atleast thrice a week</h3>
           <Grid item xs={12} justifyContent="center">
             <a
               href="https://www.linkedin.com/in/anchitdhar/"
