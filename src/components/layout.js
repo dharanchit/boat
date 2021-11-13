@@ -18,7 +18,10 @@ const MainWrapper = styled.div`
   min-height: 100%;
 
   .blog-body{
-    padding: 20px 100px;
+    @media(min-width: 992px){
+      margin-top: 100px;
+    }
+    padding: 20px 50px;
     overflow-y: auto;
   }
 `
@@ -27,15 +30,6 @@ const BodyWrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-`
-
-const FooterWrapper = styled.div`
-  width: 100%;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  text-align: end;
-  padding-right: 20px;
 `
 
 const Layout = ({ children }) => {
@@ -48,9 +42,6 @@ const Layout = ({ children }) => {
           <main className="blog-body">{children}</main>
         </BodyWrapper>
       </MainWrapper>
-      <FooterWrapper>
-        <p>Last updated on: {new Date().toDateString()}</p>
-      </FooterWrapper>
     </>
   )
 }

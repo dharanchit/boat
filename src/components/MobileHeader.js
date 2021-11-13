@@ -88,7 +88,7 @@ const MobileHeader = () => {
                   </div>
               )}
             </div>
-            <div className="col-6 d-flex flex-column justify-content-center">
+            <div className="col-6 d-flex flex-column justify-content-center text-center">
               <Link to="/" className="logo-class">
                 <span>AD NewsLetter</span>
               </Link>

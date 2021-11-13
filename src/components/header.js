@@ -7,6 +7,10 @@ import { Link } from "gatsby"
 const HeaderWrapper = styled.div`
   height: 100px;
   display: flex;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 999;
   align-items: center;
   z-index: 1;
   -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1);
