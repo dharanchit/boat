@@ -29,13 +29,13 @@ bower_components
 # node-waf configuration
 .lock-wscript
 
-src/material
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
 # Dependency directories
 node_modules/
 jspm_packages/
+src/material/
 
 # Typescript v1 declaration files
 typings/
