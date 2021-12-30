@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 import { Link } from "gatsby"
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const StyledWrapper = styled.div`
-    height: 100%;
+  height: 100%;
   .left-sidebar {
     left: 0;
     overflow-y: none;
@@ -14,11 +14,11 @@ const StyledWrapper = styled.div`
       top: 85px;
     }
 
-    @media (min-width: 450px) and (max-width: 550px){
+    @media (min-width: 450px) and (max-width: 550px) {
       top: 90px;
     }
 
-    @media (min-width: 550px) and (max-width: 599px){
+    @media (min-width: 550px) and (max-width: 599px) {
       top: 100px;
     }
 
@@ -33,7 +33,8 @@ const StyledWrapper = styled.div`
     margin-left: 50px;
   }
 
-  .sidebar-internal-links, .sidebar-external-links {
+  .sidebar-internal-links,
+  .sidebar-external-links {
     color: black;
     text-transform: uppercase;
     font-weight: 600;
@@ -47,42 +48,55 @@ const StyledWrapper = styled.div`
   }
 
   .sm-all-icons {
-    margin-left: 25px; 
+    margin-left: 25px;
   }
 
   .active {
-    border-bottom: 2px solid #464FD0;
+    border-bottom: 2px solid #464fd0;
   }
-
-`;
+`
 
 const SidebarLeft = [
   {
     topLinks: [
-      { navLink: "Finance", href:"/finance", color: "black", isAnchor:true},
-      { navLink: "Stock Tips", href:"/stock-tips", color: "black", isAnchor:true },
-      { navLink: "Development", href:"/software-development",color: "black", isAnchor:true }
+      { navLink: "Finance", href: "/finance", color: "black", isAnchor: true },
+      {
+        navLink: "Stock Tips",
+        href: "/stock-tips",
+        color: "black",
+        isAnchor: true,
+      },
+      {
+        navLink: "Development",
+        href: "/software-development",
+        color: "black",
+        isAnchor: true,
+      },
+      { navLink: "Reads", href: "/reads", color: "black", isAnchor: true },
     ],
   },
-];
+]
 
 const LeftSidebar = ({ setLeftSidebar, leftSidebar }) => {
-
   return (
-  <StyledWrapper>
-    <nav className="container-fluid left-sidebar sidebar">
-      <div className="row px-4 mt-3">
-        {SidebarLeft[0].topLinks.map((link) => (
-          <div className="col-12 last-child-donate">
-            <AnchorLink className="sidebar-internal-links" to={link.href} onAnchorLinkClick={() => setLeftSidebar(!leftSidebar)}>
+    <StyledWrapper>
+      <nav className="container-fluid left-sidebar sidebar">
+        <div className="row px-4 mt-3">
+          {SidebarLeft[0].topLinks.map(link => (
+            <div className="col-12 last-child-donate">
+              <AnchorLink
+                className="sidebar-internal-links"
+                to={link.href}
+                onAnchorLinkClick={() => setLeftSidebar(!leftSidebar)}
+              >
                 <p style={{ color: link.color }}>{link.navLink}</p>
-            </AnchorLink>
-          </div>
-        ))}
-      </div>
-    </nav>
-  </StyledWrapper>
-);
-};
+              </AnchorLink>
+            </div>
+          ))}
+        </div>
+      </nav>
+    </StyledWrapper>
+  )
+}
 
-export default LeftSidebar;
+export default LeftSidebar

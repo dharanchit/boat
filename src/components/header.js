@@ -1,7 +1,6 @@
 import * as React from "react"
 import styled from "styled-components"
 import { Grid } from "@mui/material"
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai"
 import { Link } from "gatsby"
 
 const HeaderWrapper = styled.div`
@@ -17,22 +16,22 @@ const HeaderWrapper = styled.div`
   -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1);
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.1);
 
-  .logo-class{
+  .logo-class {
     cursor: pointer;
     margin: 0 10px;
     font-size: 24px;
     font-weight: 500;
   }
 
-  .sub-section-div{
+  .sub-section-div {
     display: flex;
     align-items: center;
   }
 
-  .sub-section{
+  .sub-section {
     cursor: pointer;
     margin: 0 10px;
-    &:hover{
+    &:hover {
       font-weight: 600;
     }
   }
@@ -49,9 +48,14 @@ const HeaderWrapper = styled.div`
 `
 
 const Header = () => {
-  return(
+  return (
     <HeaderWrapper>
-      <Grid container xs={4} md={12} className="header-mobile-desktop-visibility">
+      <Grid
+        container
+        xs={4}
+        md={12}
+        className="header-mobile-desktop-visibility"
+      >
         <div>
           <Link className="link-decoration" to="/">
             <span className="logo-class">AD NewsLetter</span>
@@ -72,9 +76,14 @@ const Header = () => {
             <span className="sub-section">Development</span>
           </Link>
         </div>
+        <div className="sub-section-div">
+          <Link className="link-decoration" to="/reads">
+            <span className="sub-section">Reads</span>
+          </Link>
+        </div>
       </Grid>
     </HeaderWrapper>
-  );
+  )
 }
 
 export default Header
