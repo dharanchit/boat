@@ -18,7 +18,7 @@ const Reads = () => {
   return (
     <FinanceWrapper>
       <Layout>
-        <Seo title="Finance" />
+        <Seo title="Thoughts" />
         <h3 className="heading">Notes from reading</h3>
         <ul>
           {jsonData.map(data => (
